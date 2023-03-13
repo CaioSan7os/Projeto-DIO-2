@@ -1,0 +1,194 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio dois DIO</title>
+        <style>
+          html, body {
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    
+    display: inline-flex;
+    flex-flow: column;
+    width: 85%;
+    background-color:#7ACAD9;
+}
+.menu {
+    width: 15%;
+    background-color: rgb(172, 222, 232);
+    padding: 10px 20px 0px;
+}
+.menu ul{
+    list-style-type: none;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+
+.menu li{
+    list-style-type: none;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+.menu li:hover{
+   background-color: white;
+   border-radius: 10px;
+   font-size: 35px;
+   text-align: center;
+
+}
+.menu ul a:hover{
+    text-decoration: none;
+    color:black;
+}
+.menu ul a {
+    text-decoration: none;
+    color:rgb(29, 29, 93);
+}
+.header h1 {
+    text-align: center;
+    text-shadow: #f20707 10px 10px 5px;
+}
+.header h2{
+    text-align: center;
+    text-shadow: #f20707 10px 10px 5px;
+}
+.header {
+    background-color: rgb(188, 236, 245);
+    min-height: 150px;
+
+}
+.content {
+    background-color: rgb(185, 217, 223);
+    min-height: 300px;
+     
+}
+table td {
+    border: 1px solid black;
+    width: 500px;
+    
+}
+
+.footer {
+    background-color: rgb(104, 163, 173);
+    min-height: 150px;
+    
+}
+form input{
+    width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+fieldset{
+    text-align:start
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#serv">Horario</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                    <li><a href="#footer">Sobre</a></li>
+                </ul>
+            </div>
+    
+            <div class="main">
+                <div id="header">
+                  <img id="naldoLogo" src="img/logoNaldoo.png" alt="NaldoLogo" width="200px">
+                  <fieldset>
+                    <form action="">
+                        <label for="name"> Digite seu nome:</label>
+                        <input type="text" name="nome" required placeholder="Nome">
+                       <label for="sobrenome">Sobrenome</label>
+                       <input type="text" name="sobrenome" required placeholder="Sobrenome">
+                       <label for="email">E-mais</label>
+                        <input type="email" name="email" required placeholder="EX: meuEmail@gmail.com">
+                        <label for="cpf">CPF</label>
+                        <input type="number" name="cpf" required placeholder="CPF apenas numeros" >
+                        <label for="">Selecione a Consulta</label>
+                        <select>
+                            <option value="0" selected>Escolher</option>
+                            <option value="psicologo">Psicologo</option>
+                            <option value="clinico">Clinico Geral</option>
+                            <option value="pediatra">Pediatra</option>
+                            <option value="oftal">Oftalmologista</option>
+                        </select>
+                        <button type="submit">Enviar</button>
+                    </form>
+                  </fieldset>
+                </div>
+        
+                <div class="content">
+                  <img src="img/WhatsApp Image 2023-03-13 at 17.08.19.jpeg" alt="Naldo benny com o Chris brown" width="100%"> 
+                 <div id="tabela">
+                  <table>
+                    <tr>
+                        <td id="serv">Serviços</td>
+                        <td>Segunda a Sexta</td>
+                        <td>Sábados</td>
+                        <td>Feriados</td>
+                    </tr>
+                    <tr id="horario">
+                        <td>Clínica geral</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr><tr>
+                        <td>Pediatria</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>-</td>
+                    </tr><tr>
+                        <td>Oftalmologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 19h</td>
+                        <td>-</td>
+                    </tr>
+                  </table>
+                </div>
+                </div>
+        
+                <div id="footer">
+                    <span id="sobreTexto">Naldo sempre quis se dedicar à medicina, e logo após se formar, decidiu que queria ajudar pessoas que sofrem com doenças mentais. Ele fez sua especialização em psiquiatria e trabalhou em diversos hospitais por anos, até que decidiu que queria ter sua própria clínica.<br>
+
+No entanto, o caminho até lá não foi fácil. Além de enfrentar diversos desafios financeiros, Naldo também enfrentou preconceitos e resistência por parte de outros profissionais da área. Muitos acreditavam que a psiquiatria não era uma especialidade "de verdade", e que Naldo não deveria se dedicar a ela.<br><br>
+
+Mas Naldo não desistiu. Ele estudou muito e se dedicou a aprimorar seus conhecimentos e habilidades em psiquiatria. Ele também trabalhou duro para conseguir financiamento e apoio para sua clínica.<br><br>
+
+Finalmente, depois de anos de trabalho árduo, Naldo conseguiu abrir sua própria clínica psiquiátrica. Ele contratou uma equipe de profissionais dedicados e comprometidos, e juntos eles começaram a ajudar pessoas que sofrem com doenças mentais.<br>
+
+Hoje, a clínica de Naldo é uma das mais respeitadas da região. Ele é reconhecido por sua expertise em psiquiatria e por sua dedicação a ajudar pessoas que muitas vezes são negligenciadas pela sociedade. Naldo superou todos os desafios que enfrentou, e hoje é um exemplo de perseverança e dedicação à medicina.</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
